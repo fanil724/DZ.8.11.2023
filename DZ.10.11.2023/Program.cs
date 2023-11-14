@@ -69,6 +69,6 @@ using (ApplicationContext app = new ApplicationContext())
     var Cars = app.car.ToList();
     foreach (var c in Cars)
     {
-        Console.WriteLine($"{c.Id}.{c.Brand} - {c.Model} - {c.YearOfIssue} - {c.Power} - {c.EngineCapacity}");
+        Console.WriteLine(c.ToString());
     }
 }

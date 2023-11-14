@@ -1,0 +1,6 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=Customer;Trusted_Connection=True;",
+    "MSSQLSERVERConnection": "Server=DESKTOP-AIP99RQ\\SQLEXPRESS;Database=Cost;Trusted_Connection=True;TrustServerCertificate=True;"    
+  }
+}
