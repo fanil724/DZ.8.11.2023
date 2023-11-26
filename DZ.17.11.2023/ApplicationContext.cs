@@ -20,5 +20,11 @@ namespace DZ._17._11._2023
             optionsBuilder.UseSqlite("Data Source = Firma.db");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Human>().HasIndex(h=>new {h.Surname, h.Name });
+            modelBuilder.Entity<Department>().HasIndex(d => d.Name).HasFilter("[Name] IS NOT NULL");
+        }
+
     }
 }
